@@ -1,0 +1,44 @@
+//font-family
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,900')
+
+
+
+// variables
+$font-family: 'Raleway', sans-serif
+$bold-size: 900
+$medium-size: 500
+$small-size: 200
+
+//screen sizes
+$large-screen: 1200px
+$desktop-screen: 992px
+$semi-desktop: 991px
+$tablets: 768px
+$small-devices: 480px
+$iphone: 320px
+
+
+//Global stylings
+body
+  font-family: $font-family
+  overflow: hidden
+a
+  text-decoration: none
+  color: #fff
+  &:hover
+    text-decoration: none
+    color: #fff
+
+//custom classes
+.overlay
+  position: relative
+  margin: 0
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background: rgba(0,0,0,0.4)
+
+
+//partial files
+@import ./partials/nav
