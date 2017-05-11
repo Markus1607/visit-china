@@ -3,11 +3,17 @@
 
 
 
-// variables
+// General Stylings
 $font-family: 'Raleway', sans-serif
 $bold-size: 900
 $medium-size: 500
 $small-size: 200
+
+//Global Stylings
+$header-color: #15223D
+
+
+
 
 //screen sizes
 $large-screen: 1200px
@@ -21,13 +27,15 @@ $iphone: 320px
 //Global stylings
 body
   font-family: $font-family
-  overflow: hidden
+  overflow-x: hidden
+  background: #FAFAFA
 a
   text-decoration: none
   color: #fff
   &:hover
     text-decoration: none
     color: #fff
+
 
 //custom classes
 .overlay
@@ -39,6 +47,12 @@ a
   right: 0
   background: rgba(0,0,0,0.4)
 
+.title
+  font-size: 51px
+  font-weight: $bold-size
+
+
 
 //partial files
 @import ./partials/nav
+@import ./partials/secondPg
