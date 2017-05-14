@@ -22,12 +22,15 @@ const Menu = (props) => {
           <div className="row">
             <div className="col-md-6">
               <h4 key={idx} className=" dishName">{dish.name}</h4>
+              <hr/>
             </div>
             <div className="col-md-4">
               <span key={idx + 1} className="dishStatus">{dish.status}</span>
+              <hr/>
             </div>
-            <div className="col-md-2 pull-right">
+            <div className="col-md-2">
                 <span key={idx + 2} className="dishPrice">${dish.price}</span>
+              <hr/>
             </div>
           </div>
         )

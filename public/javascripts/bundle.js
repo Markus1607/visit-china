@@ -22147,7 +22147,8 @@ var Menu = function Menu(props) {
             "h4",
             { key: idx, className: " dishName" },
             dish.name
-          )
+          ),
+          _react2.default.createElement("hr", null)
         ),
         _react2.default.createElement(
           "div",
@@ -22156,17 +22157,19 @@ var Menu = function Menu(props) {
             "span",
             { key: idx + 1, className: "dishStatus" },
             dish.status
-          )
+          ),
+          _react2.default.createElement("hr", null)
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-md-2 pull-right" },
+          { className: "col-md-2" },
           _react2.default.createElement(
             "span",
             { key: idx + 2, className: "dishPrice" },
             "$",
             dish.price
-          )
+          ),
+          _react2.default.createElement("hr", null)
         )
       );
     })
