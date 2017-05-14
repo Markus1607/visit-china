@@ -119,3 +119,30 @@ a {
     padding-bottom: 12px; }
   #jasmine .details {
     padding-bottom: 30px; }
+
+#offers .offers-title {
+  padding-bottom: 20px; }
+
+#offers .image {
+  width: 100%;
+  height: auto; }
+  #offers .image img {
+    width: 100%;
+    height: 100%; }
+
+#offers .menu {
+  text-align: center;
+  margin-left: 10px; }
+  #offers .menu:last-child {
+    margin-left: 0px;
+    padding-bottom: 20px; }
+
+#offers .menu-title {
+  text-align: center; }
+
+#offers .menu-details {
+  padding: 5px 10px; }
+
+#offers .dishName {
+  font-size: 12px;
+  padding-left: 10px; }
