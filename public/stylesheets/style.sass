@@ -7,7 +7,7 @@
 $font-family: 'Raleway', sans-serif
 $bold-size: 900
 $medium-size: 500
-$small-size: 200
+$small-size: 400
 
 //Global Stylings
 $header-color: #15223D
@@ -30,12 +30,57 @@ body
   font-family: $font-family
   overflow-x: hidden
   background: #FAFAFA
+
+  .cover
+    height: 0
+    width: 100%
+    z-index: 1
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,0.8)
+    overflow-y: hidden
+    overflow-x: hidden
+    transition: 0.5s
+    @media screen and (max-width: $semi-desktop)
+      height: 100%
+
+
+    .closebtn
+      position: absolute
+      top: 25px
+      right: 45px
+      font-size: 60px
+
+      a
+        text-decoration: none
+
+
+    .cover-content
+      position: absolute
+      top: 25%
+      width: 100%
+      text-align: center
+      margin: 30px
+
+      a
+        padding: 8px
+        text-decoration: none
+        font-size: 36px
+        color: #fff
+        display: block
+        transition: 0.3s
+        &:hover
+          color: steelblue
 a
   text-decoration: none
   color: #fff
   &:hover
     text-decoration: none
     color: #fff
+
+
+
 
 
 //custom classes
@@ -55,7 +100,8 @@ a
 
 
 //partial files
-@import ./partials/nav
+
 @import ./partials/secondPg
+@import ./partials/nav
 @import ./partials/offers
 @import ./partials/products
